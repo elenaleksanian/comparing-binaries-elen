@@ -1,0 +1,18 @@
+execve("./writeStatic", ["./writeStatic"], 0x7ffc46b69a50 /* 22 vars */) = 0
+brk(NULL)                               = 0xb81000
+brk(0xb81d00)                           = 0xb81d00
+arch_prctl(ARCH_SET_FS, 0xb81380)       = 0
+set_tid_address(0xb81650)               = 20471
+set_robust_list(0xb81660, 24)           = 0
+rseq(0xb81ca0, 0x20, 0, 0x53053053)     = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlink("/proc/self/exe", "/home/comporg26/elen_aleksanyan2"..., 4096) = 76
+getrandom("\xa7\x30\x1d\xec\xf1\x5d\x15\x51", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xb81d00
+brk(0xba2d00)                           = 0xba2d00
+brk(0xba3000)                           = 0xba3000
+mprotect(0x4a0000, 16384, PROT_READ)    = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x9), ...}, AT_EMPTY_PATH) = 0
+write(1, "hello world\n", 12)           = 12
+exit_group(0)                           = ?
++++ exited with 0 +++
